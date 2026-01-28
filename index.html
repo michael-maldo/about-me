@@ -1,67 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Michael Maldo - Full Stack Developer">
-  <title>Michael Maldo | Full Stack Developer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      max-width: 600px;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    a.button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #00bcd4;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    a.button:hover {
-      background-color: #0097a7;
-    }
-    /*a#journal {*/
-    /*  color: #fff;*/
-    /*  text-decoration: none;*/
-    /*}*/
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Michael Maldo | Engineering Tutorials & Projects</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b, #020617);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            max-width: 720px;
+            margin: 0 auto;
+            color: #cbd5f5;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: #93c5fd;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid #1e293b;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-  <!--
-  <div><p><a href="journal.html" id="journal">Journal</a></p></div>
-  -->
-  <div class="container">
-    <h1>Michael De Leon Maldo</h1>
-    <p>Full Stack Developer • <a href="sql/basics.sql.html">SQL</a> • DevOps • Cloud Technology • Data Analytics • Blockchain Dev</p>
-    <a class="button" href="https://github.com/michael-maldo/about-me" target="_blank">GitHub Repo About-Me</a>
-  </div>
-<!--<div>-->
-<!--  test test test test-->
-<!--</div>-->
+<header>
+    <h1>Michael Maldo</h1>
+    <p>
+        Platform Engineering · DevOps · Cloud · Backend Systems
+        <br/>
+        Tutorials, experiments, and production-style demos
+    </p>
+</header>
+
+<main>
+    <section class="grid">
+        <div class="card">
+            <h2>PostgreSQL Tutorials</h2>
+            <p>
+                Practical PostgreSQL guides covering schema design,
+                indexing, performance tuning, and real-world usage.
+            </p>
+            <a href="https://postgresql.michael-maldo.biz" target="_blank">
+                Visit PostgreSQL Tutorials →
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Docker & Containers</h2>
+            <p>
+                Hands-on Docker tutorials including images, containers,
+                Compose, networking, and deployment patterns.
+            </p>
+            <a href="https://docker.michael-maldo.biz" target="_blank">
+                Visit Docker Tutorials →
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Spring Boot APIs</h2>
+            <p>
+                Production-style Spring Boot applications with REST,
+                security, Swagger, PostgreSQL, and CI/CD.
+            </p>
+            <a href="https://springboot.michael-maldo.biz" target="_blank">
+                Visit Spring Boot Tutorials →
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 Michael Maldo · Built with Linux, Docker & Spring Boot
+</footer>
 </body>
 </html>
+
